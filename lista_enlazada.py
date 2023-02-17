@@ -95,3 +95,13 @@ lista_e.recorrer()
      
 Paciente:  Karen Gómez | Fecha de nacimiento:  08-05-2000 | Doctor:  Jorge Merida | Colegiado:  8567 | Fecha de cita:  1-02-2023 | Hora cita:  10:00 | Tipo de consulta:  Medicina interna | Tratamiento:  Medicina interna
 Paciente:  Luis García | Fecha de nacimiento:  17-09-1987 | Doctor:  Melvin Ortiz | Colegiado:  20156 | Fecha de cita:  03-03-2023 | Hora cita:  14:00 | Tipo de consulta:  Medicina general | Tratamiento:  Medicina general
+
+
+def search_update(self, paciente, new_date, new_hour):
+    actual = self.primero
+    while actual is not None:
+        if actual.receta.paciente = paciente:
+             actual.receta.fecha_nac = new_date
+             actual.receta.hora_cita = new_hour
+             break
+        actual = actual.siguiente
